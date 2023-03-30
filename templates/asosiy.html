@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <title>{% block title %}MyWebsite{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="andijon container">
+    <a href="/">Home</a>
+    <a href="/and/"> Andijon</a>
+    <a href="/nam"> Namangan</a>
+</div>
+
+    {% block content %} {% endblock %}
+</body>
+</html>
