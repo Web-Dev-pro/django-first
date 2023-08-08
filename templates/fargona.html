@@ -1,0 +1,18 @@
+{% extends 'asosiy.html' %}
+{% block title %} Fargona {% endblock  %}
+{% block  content %}
+    <div class="container">
+    {% for x in fargona %}
+        <div class="fargona">
+            <h1>Farg'ona shaxriga </h1>
+            <h3>Xush Kelibsiz!!!</h3>
+            <img src="{{ x.image.url }}" alt="" width="300">
+            <h1>{{ x.viloyat }} viloyati</h1>
+            <p>{{ x.viloyat_haqida }} viloyat mavjud.</p>
+            <h2>{{ x.odamlar_soni }} o'rtacha odamlar soni.</h2>
+            <h2>{{ x.ortacha_yosh }} o'rtacha yosh.</h2>
+            <h2>{{ x.tumanlar_soni }} tumanlar mavjud.</h2>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock  %}

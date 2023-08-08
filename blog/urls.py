@@ -1,8 +1,9 @@
 from django.urls import path
-from .views import home, andijon,namangan
+from .views import *
 
 urlpatterns = [
     path("", home),
     path("and/", andijon),
-    path("nam/",namangan)
+    path("far/",fargona),
+    path("foot/", foot)
 ]
